@@ -1,5 +1,6 @@
 {
-    "name": "ScriptalbeEventSystem",
+    "name": "Lab5Games.Events",
+    "rootNamespace": "",
     "references": [],
     "includePlatforms": [
         "Android",
