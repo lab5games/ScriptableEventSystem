@@ -3,6 +3,11 @@ using UnityEngine.Events;
 
 namespace Lab5Games.Events
 {
+    public interface IScriptableEventListener<T>
+    {
+        void OnEvent(T item);
+    }
+
     public abstract class ScriptalbeEventListener<T, E, R> : MonoBehaviour, IScriptableEventListener<T> where E : ScriptalbeEvent<T> where R : UnityEvent<T>
     {
         [SerializeField] private E gameEvent;
